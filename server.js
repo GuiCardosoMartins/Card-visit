@@ -27,7 +27,7 @@ const oauth2Client = new OAUTH2(
 )
 
 oauth2Client.setCredentials({
-  refresh_token: '1//04XHaA5gDZgSFCgYIARAAGAQSNwF-L9IrU_7oDUV1_CIO2gATdpyZxodRXlAugYIemh2AmsS1J9E9f3hkGvkFrjmvVDzDX2nufu8',
+  refresh_token: process.env.GMAIL_REFRESH_TOKEN,
 });
 
 const transporter = nodemailer.createTransport({
@@ -37,8 +37,8 @@ const transporter = nodemailer.createTransport({
     user: 'aprendizif.guilhermec@gmail.com',
     clientId: '1077647540821-hm69809tv5ain1k8146uj76ougt3knv2.apps.googleusercontent.com',
     clientSecret: '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',
-    refreshToken:'1//04XHaA5gDZgSFCgYIARAAGAQSNwF-L9IrU_7oDUV1_CIO2gATdpyZxodRXlAugYIemh2AmsS1J9E9f3hkGvkFrjmvVDzDX2nufu8',
-    accessToken:'ya29.a0AfB_byCRLFbNzHErM7LMgUguXODHWxpQ4ZZcixA7gR9ubUXy_Goc2ASFCBxNwA6mvr14RuB-bkcCL1Wqh4sfABYdofH6qEcdCkaii0eNqKS_pTGpemJfFLizOw_bz8i_mTJ4yFA5QL17MTz0GCPoikDfJj-Q45nugNC1aCgYKATQSARASFQGOcNnCkrvUQysS-YH5DA26Pt6Snw0171',
+    refreshToken: process.env.GMAIL_REFRESH_TOKEN,
+    accessToken: process.env.GMAIL_ACCESS_TOKEN
   },
 });
 
