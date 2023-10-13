@@ -8,8 +8,7 @@
     ],
     "routes": [
       {
-        "src": "/v1/send-email",
-        "method": "POST"
+        "src": "/v1/send-email"
       },
       {
         "src": "/(.*)",
