@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
 app.use(cors({
-  origin: 'https://cartaodevisitas-28cd2.web.app', // Permita solicitações do endereço Angular
+  origin: 'https://cardvisit-43475.web.app', // Permita solicitações do endereço Angular
   methods: 'POST',
   credentials: true, // Permita que os cabeçalhos de autenticação sejam enviados
 }));
