@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 app.use(cors({
   origin: 'https://card-visit.vercel.app/v1/send-email', // Permita solicitações do endereço Angular
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  methods: 'POST',
   credentials: true, // Permita que os cabeçalhos de autenticação sejam enviados
 }));
 app.use(bodyParser.json());
