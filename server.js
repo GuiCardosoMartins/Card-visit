@@ -48,11 +48,11 @@ route.post('/send-email', async (req, res) => {
 
     const mailData = {
       from: '"Cartão de Visitas de Guilherme 👻" <aprendizif.guilhermec@gmail.com>',
+      name: name,
       to: to,
       subject: subject,
       html: html,
-      text: text,
-      name: name,
+      text: text
     };
 
     const info = await transporter.sendMail(mailData);
