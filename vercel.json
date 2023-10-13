@@ -8,7 +8,9 @@
     ],
     "routes": [
       {
-        "src": "/v1/send-email"
+        "src": "/v1/send-email",
+        "methods": ["POST"],
+        "dest": "/server.js"
       },
       {
         "src": "/(.*)",
