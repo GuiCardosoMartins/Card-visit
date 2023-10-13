@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:4200', // Permita solicitações do endereço Angular
+  origin: 'https://card-visit.vercel.app/', // Permita solicitações do endereço Angular
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, // Permita que os cabeçalhos de autenticação sejam enviados
 }));
